@@ -1,0 +1,87 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(179, 179, 251);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .div1 {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 49%;
+    border-top: 40px solid transparent;
+    border-left: 50px solid yellow;
+    border-bottom: 30px solid transparent;
+    z-index: 4;
+}
+
+.container .div2 {
+    width: 150px;
+    height: 150px;
+    background-color: aqua;
+    border-radius: 50%;
+    z-index: 3;
+}
+
+.container .div3 {
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    background-color: blue;
+    border-radius: 50%;
+    z-index: 2;
+    animation: anim1 2s infinite ease-in-out;
+}
+
+@keyframes anim1 {
+    0% {
+        width: 250px;
+        height: 250px;
+    }
+
+    50% {
+        width: 280px;
+        height: 280px;
+    }
+
+    10% {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+.container .div4 {
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    background-color: darkblue;
+    border-radius: 50%;
+    z-index: 1;
+    animation: anim2 2s infinite ease-in-out;
+}
+
+@keyframes anim2 {
+    0% {
+        width: 350px;
+        height: 350px;
+    }
+
+    50% {
+        width: 400px;
+        height: 400px;
+    }
+
+    10% {
+        width: 350px;
+        height: 350px;
+    }
+}
